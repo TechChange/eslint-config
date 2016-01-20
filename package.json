@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-techchange",
+  "version": "0.1.0",
+  "description": "TechChange's default ESLint configuration for ES2015.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techchange/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "es2015",
+    "es6",
+    "eslintconfig",
+    "javascript"
+  ],
+  "author": "Will Chester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techchange/eslint-config/issues"
+  },
+  "homepage": "https://github.com/techchange/eslint-config#readme"
+}
