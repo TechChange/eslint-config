@@ -8,9 +8,11 @@ TechChange produced this ESLint file to reflect best practices and code standard
 ## Installation
 
 Make sure you have eslint installed already.
+
 `npm install eslint`
 
 Install `eslint-config-techchange` from NPM. Make sure to install it globally (`-g`) if you installed eslint globally too.
+
 `npm install eslint-config-techchange`
 
 Extend your `.eslintrc` file as follows.
