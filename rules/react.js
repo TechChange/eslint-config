@@ -1,7 +1,7 @@
 module.exports = {
 	"rules": {
 		// Don't allow displayName parameters, but require the component to be named by reference.
-		"react/display-name": [0, {
+		"react/display-name": [2, {
 			"acceptTranspilerName": true
 		}],
 		// Allow all prop types at this time.
@@ -10,7 +10,7 @@ module.exports = {
 		// Just do <Component variable />.
 		"react/jsx-boolean-value": [2, "never"],
 		// Require closing brackets to be located in the same indentation as the initial tag.
-		"react/jsx-closing-bracket-location": [2, "tag-aligned"],
+		"react/jsx-closing-bracket-location": [2, "prop-aligned"],
 		// Don't allow spaces between curly braces in JSX attributes.
 		"react/jsx-curly-spacing": [2, "never"],
 		// Ensure correct prefixing of event handlers in JSX.
@@ -40,8 +40,6 @@ module.exports = {
 		"react/jsx-no-undef": 2,
 		// PascalCase for all components
 		"react/jsx-pascal-case": 2,
-		// Prefer double quotations unless you want to avoid escaping them.
-		"react/jsx-quotes": [2, "double", "avoid-escape"],
 		// Don't require prop types to be sorted in any particular order
 		"react/jsx-sort-prop-types": 0,
 		// Don't require props to be sorted in any particular order.

@@ -28,7 +28,7 @@ Enjoy!
 
 The same instructions as above apply, except for two slight deviations.
 
-First, make sure that `eslint-react-plugin` is installed. Make sure to install it in the same scope as `eslint`.
+First, make sure that `eslint-plugin-react` is installed. Make sure to install it in the same scope as `eslint`.
 
 `npm install eslint-plugin-react`
 
