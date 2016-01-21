@@ -89,12 +89,12 @@ module.exports = {
 		// Borrowed from AirBNB. https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L121
 		"react/sort-comp": [1, {
 			"order": [
-        "lifecycle",
-        "/^on.+$/",
-        "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
-        "everything-else",
-        "/^render.+$/",
-        "render"
+				"lifecycle",
+				"/^on.+$/",
+				"/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+				"everything-else",
+				"/^render.+$/",
+				"render"
 			]
 		}],
 		// Require multiline JSX to be wrapped in parathenticals.
