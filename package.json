@@ -3,9 +3,6 @@
   "version": "0.0.2",
   "description": "TechChange's default ESLint configuration for ES2015.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/techchange/eslint-config.git"
@@ -15,9 +12,26 @@
     "es2015",
     "es6",
     "eslintconfig",
-    "javascript"
+    "javascript",
+    "react"
   ],
-  "author": "Will Chester",
+  "author": {
+    "name": "Will Chester",
+    "email": "will@techchange.org",
+    "url": "techchange"
+  },
+  "contributors": [
+    {
+      "name": "Will Chester",
+      "email": "will@techchange.org",
+      "url": "techchange"
+    },
+    {
+      "name": "Matthew Heck",
+      "email": "matthew@techchange.org",
+      "url": "techchange.org"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/techchange/eslint-config/issues"
