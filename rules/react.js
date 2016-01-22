@@ -28,10 +28,9 @@ module.exports = {
 		"react/jsx-max-props-per-line":[2, {
 			"maximum": 1
 		}],
-		// Don't allow .bind or arrow functions in props, unless it's a ref
-		"react/jsx-no-bind": [2, {
-			"ignoreRefs": true
-		}],
+		// Allow arrow functions and binding because "premature optimization is the root of all evil"
+		// or at least because it messes with HMR. (h/t Donald Knuth via Gabe Isman)
+		"react/jsx-no-bind": 0,
 		// Don't allow duplicate props in the same component
 		"react/jsx-no-duplicate-props": 2,
 		// Don't allow unwrapped strings
