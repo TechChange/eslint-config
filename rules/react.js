@@ -62,8 +62,9 @@ module.exports = {
 		"react/no-direct-mutation-state": 2,
 		// Don't allow "isMounted()" calls.
 		"react/no-is-mounted": 2,
+		// DISABLING, THERE ARE TIMES WHEN THIS SHOULD BE ALLOWED
 		// Only allow one component to be defined per file.
-		"react/no-multi-comp": 2,
+		//"react/no-multi-comp": 2,
 		// Allow local state to be changed, even though we're using Redux.
 		"react/no-set-state": 0,
 		// Don't allow string references.

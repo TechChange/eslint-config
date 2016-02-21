@@ -3,7 +3,7 @@ module.exports = {
 		// Require return with callback when multiple callbacks included in a function
 		"callback-return": 2,
 		// Require require() statements to be at the top-level of module scope
-		"global-require": 2,
+		"global-require": 1,
 		// Require error handling in callbacks using the "err or error" argument
 		"handle-callback-err": [2, "^(err|error)$"],
 		// Warn if require() variables are declared with other non-require() variables
