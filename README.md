@@ -22,6 +22,8 @@ Extend your `.eslintrc` file as follows.
 }
 ```
 
+_Note: This module requires eslint >= 2.0.0, eslint-loader >= 1.3.0, and eslint-babel >= 5.0.0 as of version 0.1.0._
+
 Enjoy!
 
 ### React Installation
@@ -38,7 +40,3 @@ Second, when you extend the `.estlintrc` file, you will have to suffic the exten
 	"extends": "eslint-config-techchange/react"
 }
 ```
-
-## Future plans
-
-We will follow semantic versioning for this starting at v0.1.0.

@@ -1,13 +1,17 @@
 module.exports = {
 	"parser": "babel-eslint",
+	"parser-options": {
+		"ecmaVersion": 6,
+		"ecmaFeatures": {
+			"impliedStrict": true,
+			"jsx": true
+		}
+	},
 	"env": {
 		"node": true,
 		"mocha": true,
 		"browser": true,
 		"es6": true
-	},
-	"ecmaFeatures": {
-		"jsx": true
 	},
 	"settings": {
 		"ecmascript": 6,

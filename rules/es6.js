@@ -11,8 +11,8 @@ module.exports = {
 		"constructor-super": 2,
 		// Enforce space before generator *, no space after (e.g. function *generator() {})
 		"generator-star-spacing": 2,
-		// Disallow arrow functions where a condition is expected
-		"no-arrow-condition": 2,
+		// Disallow arrow functions where the could be confused with comparison
+		"no-confusing-arrow": 2,
 		// Disallow modifying variables named as class declarations
 		"no-class-assign": 2,
 		// Disallow modifying variables declared as constants

@@ -1,5 +1,11 @@
 module.exports = {
 	"parser": "babel-eslint",
+	"parser-options": {
+		"ecmaVersion": 6,
+		"ecmaFeatures": {
+			"impliedStrict": true
+		}
+	},
 	"env": {
 		"node": true,
 		"mocha": true,
