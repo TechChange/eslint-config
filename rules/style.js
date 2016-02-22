@@ -38,6 +38,11 @@ module.exports = {
 			"beforeColon": false,
 			"afterColon": true
 		}],
+		// Enforce spacing before and after keywords
+		"keyword-spacing": [2,{
+			"before": true,
+			"after": true
+		}],
 		// Enforce unix-style line endings
 		"linebreak-style": [2, "unix"],
 		// Enforce spaces before comment blocks and allow comments at the beginning of array and object declarations
@@ -112,20 +117,14 @@ module.exports = {
 		"semi-spacing": 2,
 		// Require semicolons after each new line
 		"semi": [2, "always"],
-		// Require spaces after keywords (e.g. if, else, while, for, etc)
-		"space-after-keywords": 2,
 		// Require space before blocks (e.g. if (a) {})
 		"space-before-blocks": 2,
 		// Disallow space before opening paren in function definitions
 		"space-before-function-paren": [2, "never"],
-		// Disallow space before keywords (if, else, while, for, do, switch, try, catch, function, etc)
-		"space-before-keywords": 2,
 		// Disallow spaces in parens
 		"space-in-parens": 2,
 		// Require space around infix operators (e.g. var foo = 1 + 2, not var foo = 1+2)
 		"space-infix-ops": 2,
-		// Require space after return, throw, and case
-		"space-return-throw-case": 2,
 		// Require spaces around unary words like void, new, delete, disallow around nonwords like ++, --, !
 		"space-unary-ops": 2,
 		// Require spaces in comments (e.g. // This is a comment, not //This is a comment)
