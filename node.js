@@ -2,9 +2,7 @@ module.exports = {
 	"env": {
 		"node": true,
 		"mocha": true,
-	},
-	"settings": {
-		"ecmascript": 6,
+		"es6": true
 	},
 	"extends": [
 		"eslint-config-techchange/rules/possible-errors",
@@ -13,5 +11,8 @@ module.exports = {
 		"eslint-config-techchange/rules/node",
 		"eslint-config-techchange/rules/strict",
 		"eslint-config-techchange/rules/style",
-	]
+	],
+	"rules": {
+		"func-names": 0
+	},
 };
