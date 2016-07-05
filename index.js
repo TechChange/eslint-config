@@ -1,19 +1,12 @@
 module.exports = {
-	"parser": "babel-eslint",
 	"parser-options": {
 		"ecmaVersion": 6,
-		"ecmaFeatures": {
-			"impliedStrict": true
-		}
 	},
 	"env": {
 		"node": true,
 		"mocha": true,
 		"browser": true,
 		"es6": true
-	},
-	"settings": {
-		"ecmascript": 6
 	},
 	"extends": [
 		"eslint-config-techchange/rules/possible-errors",
