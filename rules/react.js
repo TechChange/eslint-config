@@ -1,9 +1,7 @@
 module.exports = {
 	"rules": {
 		// Don't allow displayName parameters, but require the component to be named by reference.
-		"react/display-name": [2, {
-			"acceptTranspilerName": true
-		}],
+		"react/display-name": 0,
 		// Allow all prop types at this time.
 		"react/forbid-prop-types": 0,
 		// Enforce boolean attributes notation No need for <Component variable={true} />.
