@@ -17,7 +17,8 @@ module.exports = {
 		"ecmascript": 6,
 		"jsx": true,
 		"react": {
-			"pragma": "React"
+			"pragma": "React",
+			"version": "15.0"
 		}
 	},
 	"plugins": [
