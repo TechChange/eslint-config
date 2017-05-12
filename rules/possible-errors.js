@@ -8,7 +8,7 @@ module.exports = {
 		"no-cond-assign": "error",
 		// Disallow console.log and console.warn, but allow console.error
 		"no-console": ["error", {
-			"allow": "error"
+			"allow": ["error"]
 		}],
 		// Disallow use of constant expressions in conditionals
 		"no-constant-condition": "error",

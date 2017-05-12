@@ -122,7 +122,7 @@ module.exports = {
 		"no-unused-expressions": ["error", {
 			"allowShortCircuit": true,
 			"allowTernary": true,
-			"allowTaggedTempltes": true,
+			"allowTaggedTemplates": true,
 		}],
 		"no-unused-labels": "error",
 		// Disallow calling call() and apply() when normal invocation will suffice

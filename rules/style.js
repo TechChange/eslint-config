@@ -177,7 +177,7 @@ module.exports = {
 		"quote-props": ["error", "as-needed"],
 		// Require use of double quotes for string literals, unless they would require escaping (e.g. var string = 'The woman said "Hi!"';)
 		"quotes": ["error", "single", {
-			"avoid-escape": true
+			"avoidEscape": true
 		}],
 		// Require JSDoc comments for all functions
 		"require-jsdoc": ["error", {

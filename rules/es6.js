@@ -1,7 +1,8 @@
 module.exports = {
 	"rules": {
+		// Keeping this off because it can sometimes result in less readable code.
 		// Require braces around arrow body when required
-		"arrow-body-style": ["error", "as-needed", {
+		"arrow-body-style": ["off", "as-needed", {
 			"requireReturnForObjectLiteral": true
 		}],
 		// Require parens around arrow-functions
