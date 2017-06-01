@@ -118,7 +118,10 @@ module.exports = {
 		// Don't allow unknown properties.
 		"react/no-unknown-property": "error",
 		// Don't allow proptypes to be defined if they aren't used.
-		"react/no-unused-prop-types": "error",
+		// This is only off because the caveat leads to numerous false positives. Essentially, all
+		// destructured assignments fail:
+		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md#caveats
+		"react/no-unused-prop-types": "off",
 		// Prevent setState in componentDidUpdate
 		"react/no-will-update-set-state": "error",
 		// Only allow ES6 classes.
