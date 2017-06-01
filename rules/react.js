@@ -117,6 +117,8 @@ module.exports = {
 		"react/no-unescaped-entities": "error",
 		// Don't allow unknown properties.
 		"react/no-unknown-property": "error",
+		// Don't allow proptypes to be defined if they aren't used.
+		"react/no-unused-prop-types": "error",
 		// Prevent setState in componentDidUpdate
 		"react/no-will-update-set-state": "error",
 		// Only allow ES6 classes.
