@@ -28,7 +28,7 @@ module.exports = {
 			"extensions": [".js", ".jsx"]
 		}],
 		// The first prop of a component should never be on a new line.
-		"react/jsx-first-prop-new-line": ["error", "never"],
+		"react/jsx-first-prop-new-line": ["error", "multiline"],
 		// Ensure correct prefixing of event handlers in JSX.
 		"react/jsx-handler-names": ["warn", {
 			"eventHandlerPrefix": "handle",
@@ -66,6 +66,7 @@ module.exports = {
 		"react/jsx-sort-props": ["error", {
 			"noSortAlphabetically": true,
 			"reservedFirst": true,
+			"shorthandLast": true,
 			"callbacksLast": true,
 		}],
 		// Don't allow a space between / and >. Require a space before self closing.
@@ -104,9 +105,10 @@ module.exports = {
 		"react/no-find-dom-node": "error",
 		// Don't allow "isMounted()" calls.
 		"react/no-is-mounted": "error",
-		// DISABLING, THERE ARE TIMES WHEN THIS SHOULD BE ALLOWED
 		// Only allow one component to be defined per file.
-		"react/no-multi-comp": "off",
+		"react/no-multi-comp": ["error", {
+			"ignoreStateless": true,
+		}],
 		// Don't use the returned element from rendering with ReactDOM.
 		"react/no-render-return-value": "error",
 		// Allow local state to be changed, even though we're using Redux.
@@ -142,7 +144,10 @@ module.exports = {
 		// Don't allow people to forget to return inside render.
 		"react/require-render-return": "error",
 		// Don't allow extra closing tags for components without children.
-		"react/self-closing-comp": "error",
+		"react/self-closing-comp": ["error", {
+			"component": true,
+			"html": false
+		}],
 		// Require a certain organization of methods. Sure! Why not?!
 		// Borrowed from AirBNB. https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L121
 		"react/sort-comp": ["warn", {
