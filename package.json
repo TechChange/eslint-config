@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-techchange",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
   "repository": {
@@ -40,5 +40,9 @@
   "bugs": {
     "url": "https://github.com/techchange/eslint-config/issues"
   },
-  "homepage": "https://github.com/techchange/eslint-config#readme"
+  "homepage": "https://github.com/techchange/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "~7.0.1"
+  }
 }
