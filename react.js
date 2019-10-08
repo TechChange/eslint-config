@@ -18,7 +18,7 @@ module.exports = {
 		"jsx": true,
 		"react": {
 			"pragma": "React",
-			"version": "15.0"
+			"version": "16.0"
 		}
 	},
 	"plugins": [
