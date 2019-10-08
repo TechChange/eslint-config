@@ -22,7 +22,8 @@ module.exports = {
 		}
 	},
 	"plugins": [
-		"react"
+		"react",
+		"react-hooks"
 	],
 	"extends": [
 		"eslint-config-techchange/rules/possible-errors",
