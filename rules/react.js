@@ -166,5 +166,9 @@ module.exports = {
 		"react/style-prop-object": "error",
 		// Prevent void DOM elements from receiving children.
 		"react/void-dom-elements-no-children": "error",
+		// Require hooks to be called at the top level and from React functions
+		"react-hooks/rules-of-hooks": "error",
+		// Verify dependency list for effects
+		"react-hooks/exhaustive-deps": "warn",
 	}
 };

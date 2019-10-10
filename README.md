@@ -30,9 +30,12 @@ Enjoy!
 
 The same instructions as above apply, except for two slight deviations.
 
-First, make sure that `eslint-plugin-react` is installed. Make sure to install it in the same scope as `eslint`.
+First, make sure that `eslint-plugin-react` and `eslint-plugin-react-hooks` are installed. Make sure to install it in the same scope as `eslint`.
 
-`npm install eslint-plugin-react`
+```
+npm install eslint-plugin-react
+npm install eslint-plugin-react-hooks
+```
 
 Second, when you extend the `.estlintrc` file, you will have to suffic the extension with `/react`.
 ```json
@@ -40,3 +43,32 @@ Second, when you extend the `.estlintrc` file, you will have to suffic the exten
 	"extends": "eslint-config-techchange/react"
 }
 ```
+
+## Changelog
+
+- **0.3.0**
+	- ADDED: Rules for React hooks
+- **0.2.0**
+	- UPDATED: Use latest version of `eslint-plugin-react`
+	- ADDED: Additional react rules
+- **0.1.2**
+	- REMOVED: Babel eslint
+	- REMOVED: Extraneous settings
+- **0.1.1**
+	- UPDATED: Allow `dangerouslySetInnerHTML`
+- **0.1.0**
+	- UPDATED: Upgrade `eslint` to v2
+	- UPDATED: Upgrade `babel-eslint` to v5
+	- UPDATED: Upgrade `babel-loader` to v1.3
+- **0.0.4**
+	- UPDATED: Warn on `max-len`
+	- UPDATED: Increase allowed function complexity
+	- UPDATED: Warn on `global-require`
+	- UPDATED: Turn off `arrow-body-style`
+	- UPDATED: Turn off `react/no-multi-comp`
+- **0.0.3**
+	- UPDATED: Turn off `react/jsx-no-bind` errors
+- **0.0.2**
+	- ADDED: React rules
+- **0.0.1**
+	- Initial commit
