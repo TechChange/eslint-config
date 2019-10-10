@@ -18,12 +18,11 @@ module.exports = {
 		"jsx": true,
 		"react": {
 			"pragma": "React",
-			"version": "16.0"
+			"version": "15.0"
 		}
 	},
 	"plugins": [
-		"react",
-		"react-hooks"
+		"react"
 	],
 	"extends": [
 		"eslint-config-techchange/rules/possible-errors",
