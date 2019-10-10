@@ -46,8 +46,8 @@ Second, when you extend the `.estlintrc` file, you will have to suffic the exten
 
 ## Changelog
 
-- **0.3.0**
-	- ADDED: Rules for React hooks
+- **1.0.0**
+	- BREAKING: Added rules for React hooks
 - **0.2.0**
 	- UPDATED: Use latest version of `eslint-plugin-react`
 	- ADDED: Additional react rules
