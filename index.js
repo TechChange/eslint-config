@@ -1,6 +1,6 @@
 module.exports = {
-	"parser-options": {
-		"ecmaVersion": 6,
+	"parserOptions": {
+		"ecmaVersion": 6
 	},
 	"env": {
 		"node": true,
@@ -9,12 +9,12 @@ module.exports = {
 		"es6": true
 	},
 	"extends": [
-		"eslint-config-techchange/rules/possible-errors",
-		"eslint-config-techchange/rules/best-practices",
-		"eslint-config-techchange/rules/variables",
-		"eslint-config-techchange/rules/node",
-		"eslint-config-techchange/rules/es6",
-		"eslint-config-techchange/rules/strict",
-		"eslint-config-techchange/rules/style"
+		"./rules/possible-errors",
+		"./rules/best-practices",
+		"./rules/variables",
+		"./rules/node",
+		"./rules/es6",
+		"./rules/strict",
+		"./rules/style"
 	]
 };

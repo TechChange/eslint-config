@@ -1,6 +1,6 @@
 module.exports = {
 	"parser": "babel-eslint",
-	"parser-options": {
+	"parserOptions": {
 		"ecmaVersion": 6,
 		"ecmaFeatures": {
 			"impliedStrict": true,
