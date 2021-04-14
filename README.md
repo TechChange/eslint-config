@@ -46,6 +46,9 @@ Second, when you extend the `.estlintrc` file, you will have to suffic the exten
 
 ## Changelog
 
+- **2.0.0**
+	- BREAKING: Added jsx-a11y plugin as peer dependency.
+	- ADDED: Added recommended rules from jsx-a11y plugin.
 - **1.0.0**
 	- BREAKING: Added rules for React hooks
 - **0.2.0**

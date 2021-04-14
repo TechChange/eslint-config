@@ -23,7 +23,8 @@ module.exports = {
 	},
 	"plugins": [
 		"react",
-		"react-hooks"
+		"react-hooks",
+		"jsx-a11y",
 	],
 	"extends": [
 		"eslint-config-techchange/rules/possible-errors",
@@ -33,6 +34,7 @@ module.exports = {
 		"eslint-config-techchange/rules/es6",
 		"eslint-config-techchange/rules/strict",
 		"eslint-config-techchange/rules/style",
-		"eslint-config-techchange/rules/react"
+		"eslint-config-techchange/rules/react",
+		"plugin:jsx-a11y/recommended"
 	]
 };
