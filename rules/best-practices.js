@@ -1,110 +1,155 @@
 module.exports = {
 	"rules": {
 		// Enforce corresponding getters and setters in objects
-		"accessor-pairs": 2,
+		"accessor-pairs": "error",
+		// Enforce return statements in callbacks of array methods
+		"array-callback-return": "error",
 		// Disallow var reference outside of scope
-		"block-scoped-var": 2,
+		"block-scoped-var": "error",
+		// Force class methods to be static static unless they utilize this.
+		"class-methods-use-this": "error",
 		// Limit the paths through a function to five at max
-		"complexity": [1, 5],
+		"complexity": ["warn", 5],
 		// Ensure that the type of returns is consistent (i.e. boolean, object, etc)
-		"consistent-return": 2,
+		"consistent-return": ["error", {
+			"treatUndefinedAsUnspecified": true
+		}],
 		// Always require curly braces
-		"curly": 2,
+		"curly": ["error", "all"],
 		// Require default case in switch statements
-		"default-case": 2,
+		"default-case": "error",
+		// Require the dot to be on the same line as the property, not the object.
+		// More here: http://eslint.org/docs/rules/dot-location
+		"dot-location": ["error", "property"],
 		// Require dot notation to access properties where appropriate
-		"dot-notation": [2, {
+		"dot-notation": ["error", {
 			// Allow underscores when interacting with external API
 			"allowPattern": "^[a-z]+(_[a-z]+)+$"
 		}],
 		// Enforce safe comparisons with === and !==
-		"eqeqeq": 2,
+		"eqeqeq": "error",
 		// Require for in on non-prototype inherited properties
-		"guard-for-in": 2,
+		"guard-for-in": "error",
 		// Disallow alert(), confirm(), prompt()
-		"no-alert": 2,
+		"no-alert": "error",
 		// Disallow arguments.caller and arguments.callee as they have been depreciated
-		"no-caller": 2,
+		"no-caller": "error",
+		// Don't allow lexical declarations in case/default clauses.
+		"no-case-declarations": "error",
 		// Disallow regexes that look like division
-		"no-div-regex": 2,
+		"no-div-regex": "error",
 		// Disallow else statements with return if not needed
-		"no-else-return": 2,
+		"no-else-return": "error",
+		// Disallow empty functions -- but it's okay if you have a comment saying "//do nothing"
+		"no-empty-function": "error",
+		// Disallow empty destructuring patterns
+		"no-empty-pattern": "error",
 		// Disallow unsafe comparison with null (e.g. if (foo == null) )
-		"no-eq-null": 2,
+		"no-eq-null": "error",
 		// Disallow the use of eval()
-		"no-eval": 2,
+		"no-eval": "error",
 		// Disallow extending native objects
-		"no-extend-native": 2,
+		"no-extend-native": "error",
 		// Warn when .bind() used and this not referenced or not needed
-		"no-extra-bind": 2,
+		"no-extra-bind": "error",
+		// Disallow unnecessary labels in loops and switches
+		"no-extra-label": "error",
 		// Enforce commenting of switch case fallthroughs
-		"no-fallthrough": 2,
+		"no-fallthrough": "error",
 		// Warn when decimals are unbalanced (e.g. 2. or .8 should be 2.0 or 0.8)
-		"no-floating-decimal": 2,
+		"no-floating-decimal": "error",
+		// Disallow assignments to native objects or global variables.
+		"no-global-assign": "error",
 		// Warn for fancy coercions that can be hard to read
-		"no-implicit-coercion": 2,
+		"no-implicit-coercion": "error",
+		// Disallow variable and function declarations in the global scope
+		"no-implicit-globals": "error",
 		// Disallow passing strings to setInterval and setTimeout
-		"no-implied-eval": 2,
+		"no-implied-eval": "error",
 		// Disallow using this outside of context
-		"no-invalid-this": 2,
+		"no-invalid-this": "error",
 		// Disallow obsolete use of __iterator__
-		"no-iterator": 2,
+		"no-iterator": "error",
 		// Disallow using labels in switch statements
-		"no-labels": 2,
+		"no-labels": "error",
+		// Disallow unnecessary nested blocks
+		"no-lone-blocks": "error",
 		// Disallow function declarations in loops
-		"no-loop-func": 2,
+		"no-loop-func": "error",
+		// Disallow magic numbers. Numbers that occur multiple times in code without explicit meaning.
+		"no-magic-numbers": "error",
 		// Disallow multiple unnecessary spaces
-		"no-multi-spaces": 2,
-		// Disallow reassignment of native objects
-		"no-native-reassign": 2,
+		"no-multi-spaces": "error",
+		// Disallow multiline strings
+		"no-multi-str": "error",
+		// Disallow new for side effects
+		"no-new": "error",
 		// Disallow Function declaration using new
-		"no-new-func": 2,
+		"no-new-func": "error",
 		// Disallow new with String, Number, Boolean
-		"no-new-wrappers": 2,
+		"no-new-wrappers": "error",
 		// Disallow using new without assignment
-		"no-new": 2,
-		// Octal escape characters have been depreciated in favor of their unicode counterparts
-		"no-octal-escape": 2,
+		"no-new": "error",
 		// Disallow octal literals
-		"no-octal": 2,
+		"no-octal": "error",
+		// Octal escape characters have been depreciated in favor of their unicode counterparts
+		"no-octal-escape": "error",
 		// Disallow reassignment of function parameters
-		"no-param-reassign": 2,
-		// Disallow using process.env in node environments in favor of using config files
-		"no-process-env": 1,
+		"no-param-reassign": "error",
 		// Disallow use of depreciated __proto__
-		"no-proto": 2,
+		"no-proto": "error",
 		// Disallow redeclaration of existing variables and global variables
-		"no-redeclare": [2, {
+		"no-redeclare": ["error", {
 			"builtinGlobals": true
 		}],
 		// Disallow the use of assignments in return statements
-		"no-return-assign": 2,
+		"no-return-assign": "error",
+		// Disallow unnecessary return await in async functions.
+		"no-return-await": "error",
 		// Disallow the use of javascript: in URLs (considered by some to be a form of eval)
-		"no-script-url": 2,
+		"no-script-url": "error",
+		// Disallow self assignment where both sides are exactly the same.
+		"no-self-assign": "error",
 		// Disallow comparisons with self, if (x === x)
-		"no-self-compare": 2,
+		"no-self-compare": "error",
 		// Disallow including multiple expressions using a comma when only one is expected
-		"no-sequences": 2,
+		"no-sequences": "error",
 		// Disallow throwing of anything other than Error objects (for the most part)
-		"no-throw-literal": 2,
+		"no-throw-literal": "error",
+		// Disallow unmodified conditions in loops
+		"no-unmodified-loop-condition": "error",
 		// Disallow expressions without assignment or execution, but allow in certain cases
-		"no-unused-expressions": [2, {
+		"no-unused-expressions": ["error", {
 			"allowShortCircuit": true,
-			"allowTernary": true
+			"allowTernary": true,
+			"allowTaggedTemplates": true,
 		}],
+		"no-unused-labels": "error",
 		// Disallow calling call() and apply() when normal invocation will suffice
-		"no-useless-call": 2,
+		"no-useless-call": "error",
 		// Disallow concatenation of two strings when not needed (var foo = "a" + "b")
-		"no-useless-concat": 2,
+		"no-useless-concat": "error",
+		// Disallow unnecessary escape characters.
+		"no-useless-escape": "error",
+		// Disallow redundant, useless return statements.
+		"no-useless-return": "error",
 		// Disallow the use of void operator as it can lead to confusion
-		"no-void": 2,
+		"no-void": "error",
+		// Allow todo and other comments indicating incompletel code.
+		"no-warning-comments": "off",
 		// Disallow with statements, which are not allowed in strict mode
-		"no-with": 2,
+		"no-with": "error",
+		// Always use an Error object when rejecting a promise.
+		"prefer-promise-reject-errors": "error",
 		// Force parseInt() functions to include the second argument (radix) to prevent incorrect interpretation
-		"radix": 2,
+		"radix": "error",
+		// Require await in async functions. It's probably a mistake if it's missing.
+		"require-await": "error",
+		// Don't require variable declarations to be hoisted to the top.
+		"vars-in-top": "off",
 		// Require parentheses for all immediately invoked function expressions (This may be up for debate)
-		"wrap-iife": [2, "inside"],
+		"wrap-iife": ["error", "inside"],
 		// Disallow Yoda conditions where the literal is on the left side of an expression (e.g. if ("red" === color))
-		"yoda": 2
+		"yoda": "error"
 	}
 };

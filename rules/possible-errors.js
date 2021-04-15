@@ -1,49 +1,69 @@
 module.exports = {
 	"rules": {
+		// Disallow await inside of loops
+		"no-await-in-loop": "error",
+		// Disallow comparing against -0.
+		"no-compare-neg-zero": "error",
 		// Disallow variable assignment in conditionals
-		"no-cond-assign": 2,
+		"no-cond-assign": "error",
+		// Disallow console.log and console.warn, but allow console.error
+		"no-console": ["error", {
+			"allow": ["error"]
+		}],
 		// Disallow use of constant expressions in conditionals
-		"no-constant-condition": 2,
+		"no-constant-condition": "error",
 		// Disallow control characters in regexs
-		"no-control-regex": 2,
+		"no-control-regex": "error",
 		// Disallow debugger
-		"no-debugger": 2,
+		"no-debugger": "error",
 		// Disallow duplicate params in function declarations
-		"no-dupe-args": 2,
+		"no-dupe-args": "error",
 		// Disallow duplicate keys in object literals
-		"no-dupe-keys": 2,
+		"no-dupe-keys": "error",
 		// Disallow duplicate case labels in switch statements
-		"no-duplicate-case": 2,
-		// Disallow empty character class in regex
-		"no-empty-character-class": 2,
+		"no-duplicate-case": "error",
 		// Disallow empty block statements
-		"no-empty": 2,
+		"no-empty": "error",
+		// Disallow empty character class in regex
+		"no-empty-character-class": "error",
 		// Disallow assignment of the exception parameter
-		"no-ex-assign": 2,
+		"no-ex-assign": "error",
 		// Disallow extra boolean casts in conditionals (e.g. if (!!bar) {)
-		"no-extra-boolean-cast": 2,
+		"no-extra-boolean-cast": "error",
+		// Disallow unnecessary, extra, parentheses
+		"no-extra-parens": "error",
 		// Disallow extra semi-colons
-		"no-extra-semi": 2,
+		"no-extra-semi": "error",
 		// Disallow reassignment of function declaration
-		"no-func-assign": 2,
+		"no-func-assign": "error",
+		// Disallow innerblock function declarations
+		"no-inner-declarations": "error",
 		// Disallow invalid regex
-		"no-invalid-regexp": 2,
+		"no-invalid-regexp": "error",
 		// Disallow non-space/tab whitespace
-		"no-irregular-whitespace": 2,
-		// Disallow negated left operand of in operator
-		"no-negated-in-lhs": 2,
+		"no-irregular-whitespace": "error",
 		// Disallow global object function calls (e.g. JSON() or Math())
-		"no-obj-calls": 2,
+		"no-obj-calls": "error",
+		// Disallow use of Object.prototypes builtins directly
+		"no-prototype-builtins": "error",
 		// Disallow multiple plain spaces in regexes
-		"no-regex-spaces": 2,
+		"no-regex-spaces": "error",
 		// Disallow empty slots in arrays (e.g. [1,,2])
-		"no-sparse-arrays": 2,
+		"no-sparse-arrays": "error",
+		// Disallow template literaly placeholder syntax in regular strings
+		"no-template-curly-in-string": "error",
+		// Disallow confusing multiline expressions
+		"no-unexpected-multiline": "error",
 		// Disallow code that has no ability to be executed
-		"no-unreachable": 2,
+		"no-unreachable": "error",
+		// Disallow control flow statements in finally blocks.
+		"no-unsafe-finally": "error",
+		// Disallow negating the left operand of relational operators
+		"no-unsafe-negation": "error",
 		// Disallow comparison against NaN without isNan()
-		"use-isnan": 2,
+		"use-isnan": "error",
 		// Ensure JSDoc comments are syntactically correct
-		"valid-jsdoc": [2, {
+		"valid-jsdoc": ["error", {
 			// Prefer @returns to @return
 			"prefer": {
 				"return": "returns",
@@ -52,8 +72,6 @@ module.exports = {
 			"requireReturn": false
 		}],
 		// Validates string comparison of typeof for errors
-		"valid-typeof": 2,
-		// Disallow multi-line expressions without semi-colons
-		"no-unexpected-multiline": 2
+		"valid-typeof": "error",
 	}
 };
