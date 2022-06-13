@@ -40,6 +40,10 @@ module.exports = {
 			"maximum": 1,
 			"when": "always"
 		}],
+		// Require tabs for logical expressions inside JSX statements.
+		"react/jsx-indent": ["error", "tab", {
+			"indentLogicalExpressions": true
+		}],
 		// Require binding to happen in the constructor.
 		"react/jsx-no-bind": ["error", {
 			"allowArrowFunctions": true
