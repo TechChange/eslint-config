@@ -4,8 +4,8 @@ module.exports = {
 		"accessor-pairs": 2,
 		// Disallow var reference outside of scope
 		"block-scoped-var": 2,
-		// Limit the paths through a function to five at max
-		"complexity": [1, 5],
+		// Limit the paths through a function to 20 at max
+		"complexity": [1, 20],
 		// Ensure that the type of returns is consistent (i.e. boolean, object, etc)
 		"consistent-return": 2,
 		// Always require curly braces
