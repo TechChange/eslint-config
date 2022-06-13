@@ -54,7 +54,12 @@ module.exports = {
 		// Enforces maximum nesting level, need to check with team if we want to enforce this
 		"max-depth": [1, 5],
 		// Enforce a maximum line length of 100 characters, while treating tabs as 2 characters
-		"max-len": [1, 100, 2],
+		// Ignore URLs that are longer than 100 characters
+		// Ignore internationalization lines due to long constant names
+		"max-len": [1, 100, 2, {
+			"ignoreUrls": true,
+			"ignorePattern": ".*(FormattedMessage {\\.\\.\\.messages\\.).*|.*(intl\\.formatMessage\\(messages\\.).*"
+		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
 		// Enforce a maximum of 5 arguments a function can accept
