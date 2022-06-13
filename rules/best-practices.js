@@ -73,7 +73,7 @@ module.exports = {
 		"no-process-env": 1,
 		// Disallow use of depreciated __proto__
 		"no-proto": 2,
-		// Disallow redeclaration of existing variables and global variables
+		// Disallow re-declaration of existing variables and global variables
 		"no-redeclare": [2, {
 			"builtinGlobals": true
 		}],

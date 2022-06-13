@@ -1,7 +1,7 @@
 module.exports = {
 	"rules": {
 		// Enforce no spaces at bookends of array/object definitions (e.g. [2, 3] is valid, [ 2, 3 ] is invalid)
-		"array-bracket-spacing": [2, "never"],		
+		"array-bracket-spacing": [2, "never"],
 		// Enforce spaces in single line blocks (e.g. function() { return true; } is valid, function() {return true;} is invalid)
 		"block-spacing": 2,
 		// Enforce consistent brace style
@@ -25,7 +25,7 @@ module.exports = {
 		"eol-last": 2,
 		// Enforce naming of optionally named functions (that could remain anonymous). This helps with debugging, but open to turning this off
 		"func-names": 2,
-		// Enforce a mininmum id length of 2 characters, except i for iterating over loops
+		// Enforce a minimum id length of 2 characters, except i for iterating over loops
 		"id-length": [2, {
 			"exceptions": ["i", "j", "k", "_"]
 		}],

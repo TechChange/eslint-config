@@ -139,7 +139,7 @@ module.exports = {
 		// provided, this would be detrimental to that practice.
 		"react/require-default-props": "off",
 		// Don't require optimization -- yet.
-		// This would require every compnent to have a shouldComponentUpdate defined.
+		// This would require every component to have a shouldComponentUpdate defined.
 		"react/require-optimization": "off",
 		// Don't allow people to forget to return inside render.
 		"react/require-render-return": "error",
