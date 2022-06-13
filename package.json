@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-techchange",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
   "repository": {
