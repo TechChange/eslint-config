@@ -29,11 +29,6 @@ module.exports = {
 		}],
 		// The first prop of a component should never be on a new line.
 		"react/jsx-first-prop-new-line": ["error", "multiline"],
-		// Ensure correct prefixing of event handlers in JSX.
-		"react/jsx-handler-names": ["warn", {
-			"eventHandlerPrefix": "handle",
-			"eventHandlerPropPrefix": "on"
-		}],
 		// Require a tab indentation in props.
 		"react/jsx-indent-props": ["error", "tab"],
 		// Require tab indentations in all JSX components
