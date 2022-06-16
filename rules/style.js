@@ -27,7 +27,7 @@ module.exports = {
 		"func-names": 2,
 		// Enforce a minimum id length of 2 characters, except i for iterating over loops
 		"id-length": [2, {
-			"exceptions": ["i", "j", "k", "_"]
+			"exceptions": ["i", "j", "k"]
 		}],
 		// Enforce tabs equivalent to two spaces
 		"indent": [2, "tab"],
