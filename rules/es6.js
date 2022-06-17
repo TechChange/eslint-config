@@ -7,7 +7,7 @@ module.exports = {
 		"arrow-parens": [2, "always"],
 		// Require spaces before and after arrow-function declarations
 		"arrow-spacing": 2,
-		// Require super when necessary, warn when it is used inproperly
+		// Require super when necessary, warn when it is used improperly
 		"constructor-super": 2,
 		// Enforce space before generator *, no space after (e.g. function *generator() {})
 		"generator-star-spacing": 2,

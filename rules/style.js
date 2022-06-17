@@ -1,7 +1,7 @@
 module.exports = {
 	"rules": {
 		// Enforce no spaces at bookends of array/object definitions (e.g. [2, 3] is valid, [ 2, 3 ] is invalid)
-		"array-bracket-spacing": [2, "never"],		
+		"array-bracket-spacing": [2, "never"],
 		// Enforce spaces in single line blocks (e.g. function() { return true; } is valid, function() {return true;} is invalid)
 		"block-spacing": 2,
 		// Enforce consistent brace style
@@ -25,9 +25,9 @@ module.exports = {
 		"eol-last": 2,
 		// Enforce naming of optionally named functions (that could remain anonymous). This helps with debugging, but open to turning this off
 		"func-names": 2,
-		// Enforce a mininmum id length of 2 characters, except i for iterating over loops
+		// Enforce a minimum id length of 2 characters, except i for iterating over loops
 		"id-length": [2, {
-			"exceptions": ["i", "_"]
+			"exceptions": ["i", "j", "k"]
 		}],
 		// Enforce tabs equivalent to two spaces
 		"indent": [2, "tab"],
@@ -54,7 +54,12 @@ module.exports = {
 		// Enforces maximum nesting level, need to check with team if we want to enforce this
 		"max-depth": [1, 5],
 		// Enforce a maximum line length of 100 characters, while treating tabs as 2 characters
-		"max-len": [1, 100, 2],
+		// Ignore URLs that are longer than 100 characters
+		// Ignore internationalization lines due to long constant names
+		"max-len": [1, 100, 2, {
+			"ignoreUrls": true,
+			"ignorePattern": ".*(FormattedMessage {\\.\\.\\.messages\\.).*|.*(intl\\.formatMessage\\(messages\\.).*"
+		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
 		// Enforce a maximum of 5 arguments a function can accept

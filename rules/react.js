@@ -29,11 +29,6 @@ module.exports = {
 		}],
 		// The first prop of a component should never be on a new line.
 		"react/jsx-first-prop-new-line": ["error", "multiline"],
-		// Ensure correct prefixing of event handlers in JSX.
-		"react/jsx-handler-names": ["warn", {
-			"eventHandlerPrefix": "handle",
-			"eventHandlerPropPrefix": "on"
-		}],
 		// Require a tab indentation in props.
 		"react/jsx-indent-props": ["error", "tab"],
 		// Require tab indentations in all JSX components
@@ -44,6 +39,10 @@ module.exports = {
 		"react/jsx-max-props-per-line":["error", {
 			"maximum": 1,
 			"when": "always"
+		}],
+		// Require tabs for logical expressions inside JSX statements.
+		"react/jsx-indent": ["error", "tab", {
+			"indentLogicalExpressions": true
 		}],
 		// Require binding to happen in the constructor.
 		"react/jsx-no-bind": ["error", {
@@ -139,7 +138,7 @@ module.exports = {
 		// provided, this would be detrimental to that practice.
 		"react/require-default-props": "off",
 		// Don't require optimization -- yet.
-		// This would require every compnent to have a shouldComponentUpdate defined.
+		// This would require every component to have a shouldComponentUpdate defined.
 		"react/require-optimization": "off",
 		// Don't allow people to forget to return inside render.
 		"react/require-render-return": "error",

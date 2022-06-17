@@ -37,7 +37,7 @@ npm install eslint-plugin-react
 npm install eslint-plugin-react-hooks
 ```
 
-Second, when you extend the `.estlintrc` file, you will have to suffic the extension with `/react`.
+Second, when you extend the `.estlintrc` file, you will have to suffix the extension with `/react`.
 ```json
 {
 	"extends": "eslint-config-techchange/react"
@@ -46,6 +46,14 @@ Second, when you extend the `.estlintrc` file, you will have to suffic the exten
 
 ## Changelog
 
+- **3.0.0**
+	- BREAKING: Added `react/jsx-indent` rule to enforce tabbing logical expressions inside a JSX statement.
+	- UPDATED: Update `max-len` rule to:
+		- Ignore URLs since these shouldn't have newlines inside them
+		- Ignore internationalization due to long contant names
+	- UPDATED: Increase `complexity` allowed to the eslint default of `20` as existing rule was unnecessarily constraining
+	- UPDATED: Remove react rule to start functions with handle
+	- UPDATED: Update rule `id-length` to allow variables `j` and `k` which are commonly used in `for` loops
 - **2.0.0**
 	- BREAKING: Added jsx-a11y plugin as peer dependency.
 	- ADDED: Added recommended rules from jsx-a11y plugin.
