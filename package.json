@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-techchange",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
   "repository": {
@@ -18,18 +18,18 @@
   "author": {
     "name": "Will Chester",
     "email": "will@techchange.org",
-    "url": "techchange.org"
+    "url": "https://techchange.org"
   },
   "contributors": [
     {
       "name": "Will Chester",
       "email": "will@techchange.org",
-      "url": "techchange.org"
+      "url": "https://techchange.org"
     },
     {
       "name": "Matthew Heck",
       "email": "matthew@techchange.org",
-      "url": "techchange.org"
+      "url": "https://techchange.org"
     },
     {
       "name": "Gabe Isman",

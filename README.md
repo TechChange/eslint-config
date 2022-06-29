@@ -46,6 +46,8 @@ Second, when you extend the `.estlintrc` file, you will have to suffix the exten
 
 ## Changelog
 
+- **3.0.1**
+	- UPDATED: Update `max-len` rule to account for line breaks in international regex exceptions.
 - **3.0.0**
 	- BREAKING: Added `react/jsx-indent` rule to enforce tabbing logical expressions inside a JSX statement.
 	- UPDATED: Update `max-len` rule to:
