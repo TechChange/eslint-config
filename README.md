@@ -22,7 +22,7 @@ Extend your `.eslintrc` file as follows.
 }
 ```
 
-_Note: This module requires eslint >= 2.0.0, eslint-loader >= 1.3.0, and eslint-babel >= 5.0.0 as of version 0.1.0._
+Note: This module requires `eslint@>=8.0.0`, `@babel/core@>=7.0.0` and `@babel/eslint-parser@>=7.0.0` as of v4.
 
 Enjoy!
 
@@ -30,11 +30,10 @@ Enjoy!
 
 The same instructions as above apply, except for two slight deviations.
 
-First, make sure that `eslint-plugin-react` and `eslint-plugin-react-hooks` are installed. Make sure to install it in the same scope as `eslint`.
+First, make sure that `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y` are installed. Make sure to install it in the same scope as `eslint`.
 
 ```
-npm install eslint-plugin-react
-npm install eslint-plugin-react-hooks
+npm install eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 ```
 
 Second, when you extend the `.estlintrc` file, you will have to suffix the extension with `/react`.
@@ -46,6 +45,10 @@ Second, when you extend the `.estlintrc` file, you will have to suffix the exten
 
 ## Changelog
 
+- **4.0.0**
+	- BREAKING: Upgrade `eslint` to v8.
+	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries.
+	- UPDATED: Upgrade to latest version of 3rd-party react eslint libraries.
 - **3.0.1**
 	- UPDATED: Update `max-len` rule to account for line breaks in international regex exceptions.
 - **3.0.0**
