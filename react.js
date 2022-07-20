@@ -1,6 +1,6 @@
 module.exports = {
-	"parser": "babel-eslint",
-	"parser-options": {
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
 		"ecmaVersion": 6,
 		"ecmaFeatures": {
 			"impliedStrict": true,
@@ -27,14 +27,14 @@ module.exports = {
 		"jsx-a11y",
 	],
 	"extends": [
-		"eslint-config-techchange/rules/possible-errors",
-		"eslint-config-techchange/rules/best-practices",
-		"eslint-config-techchange/rules/variables",
-		"eslint-config-techchange/rules/node",
-		"eslint-config-techchange/rules/es6",
-		"eslint-config-techchange/rules/strict",
-		"eslint-config-techchange/rules/style",
-		"eslint-config-techchange/rules/react",
+		"./rules/possible-errors",
+		"./rules/best-practices",
+		"./rules/variables",
+		"./rules/node",
+		"./rules/es6",
+		"./rules/strict",
+		"./rules/style",
+		"./rules/react",
 		"plugin:jsx-a11y/recommended"
 	]
 };

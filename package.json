@@ -23,28 +23,14 @@
     "email": "will@techchange.org",
     "url": "https://techchange.org"
   },
-  "contributors": [
-    {
-      "name": "Will Chester",
-      "email": "will@techchange.org",
-      "url": "https://techchange.org"
-    },
-    {
-      "name": "Matthew Heck",
-      "email": "matthew@techchange.org",
-      "url": "https://techchange.org"
-    },
-    {
-      "name": "Gabe Isman",
-      "email": "gabe.isman@gmail.com"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/techchange/eslint-config/issues"
   },
   "homepage": "https://github.com/techchange/eslint-config#readme",
   "peerDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/eslint-parser": "^7.18.9",
     "eslint": "^8.19.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-react": "^7.30.1",

@@ -58,7 +58,7 @@ module.exports = {
 		// Ignore internationalization lines due to long constant names
 		"max-len": [1, 100, 2, {
 			"ignoreUrls": true,
-			"ignorePattern": ".*({\\.\\.\\.messages\\.).*|.*(intl\\.formatMessage\\(messages\\.).*"
+			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*"
 		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
