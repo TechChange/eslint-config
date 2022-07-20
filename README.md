@@ -37,7 +37,10 @@ Finally, when you extend the `.estlintrc` file, you will have to suffix the exte
 
 ```json
 {
-	"extends": "eslint-config-techchange/react"
+	"extends": [
+		"eslint-config-techchange/react"
+	],
+	"parser": "@babel/eslint-parser"
 }
 ```
 
