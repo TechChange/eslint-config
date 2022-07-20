@@ -7,36 +7,34 @@ TechChange produced this ESLint file to reflect best practices and code standard
 
 ## Installation
 
-Make sure you have eslint installed already.
+1. Install `eslint` and `eslint-config-techchange` from NPM.
 
-`npm install eslint`
+`npm install --save-dev eslint eslint-config-techchange`
 
-Install `eslint-config-techchange` from NPM. Make sure to install it globally (`-g`) if you installed eslint globally too.
+2. Extend your `.eslintrc` file as follows.
 
-`npm install eslint-config-techchange`
-
-Extend your `.eslintrc` file as follows.
 ```json
 {
 	"extends": "eslint-config-techchange"
 }
 ```
 
-Note: This module requires `eslint@>=8.0.0`, `@babel/core@>=7.0.0` and `@babel/eslint-parser@>=7.0.0` as of v4.
-
 Enjoy!
 
 ### React Installation
 
-The same instructions as above apply, except for two slight deviations.
+The same instructions as above apply, except for a few slight deviations.
 
-First, make sure that `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y` are installed. Make sure to install it in the same scope as `eslint`.
+First, make sure to install the `@babel-core` and `@babel/eslint-parser` libraries to be able to parse React via eslint.
 
-```
-npm install eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
-```
+`npm install --save-dev @babel/core @babel/eslint-parser`
 
-Second, when you extend the `.estlintrc` file, you will have to suffix the extension with `/react`.
+Next, make sure to install the `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, and `eslint-plugin-react-hooks` libraries for nested rules dependencies.
+
+`npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks`
+
+Finally, when you extend the `.estlintrc` file, you will have to suffix the extension with `/react`.
+
 ```json
 {
 	"extends": "eslint-config-techchange/react"
@@ -47,8 +45,8 @@ Second, when you extend the `.estlintrc` file, you will have to suffix the exten
 
 - **4.0.0**
 	- BREAKING: Upgrade `eslint` to v8.
-	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries.
-	- UPDATED: Upgrade to latest version of 3rd-party react eslint libraries.
+	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries for react configs.
+	- UPDATED: Upgrade to latest version of the 3rd-party react eslint libraries.
 - **3.0.1**
 	- UPDATED: Update `max-len` rule to account for line breaks in international regex exceptions.
 - **3.0.0**
