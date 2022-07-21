@@ -125,7 +125,11 @@ module.exports = {
 		// Require space before blocks (e.g. if (a) {})
 		"space-before-blocks": 2,
 		// Disallow space before opening paren in function definitions
-		"space-before-function-paren": [2, "never"],
+		"space-before-function-paren": ["error", {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
 		// Disallow spaces in parens
 		"space-in-parens": 2,
 		// Require space around infix operators (e.g. var foo = 1 + 2, not var foo = 1+2)
