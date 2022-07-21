@@ -47,7 +47,7 @@ Finally, when you extend the `.estlintrc` file, you will have to suffix the exte
 ## Changelog
 
 - **4.0.1**
-	- UPDATED: Update to `ecmaVersion:8` for parsing. 
+	- UPDATED: Update to `ecmaVersion:9` for parsing. 
 - **4.0.0**
 	- BREAKING: Upgrade `eslint` to v8.
 	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries for react configs.
