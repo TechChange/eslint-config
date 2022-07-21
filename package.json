@@ -1,8 +1,12 @@
 {
   "name": "eslint-config-techchange",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/techchange/eslint-config.git"
@@ -20,31 +24,12 @@
     "email": "will@techchange.org",
     "url": "https://techchange.org"
   },
-  "contributors": [
-    {
-      "name": "Will Chester",
-      "email": "will@techchange.org",
-      "url": "https://techchange.org"
-    },
-    {
-      "name": "Matthew Heck",
-      "email": "matthew@techchange.org",
-      "url": "https://techchange.org"
-    },
-    {
-      "name": "Gabe Isman",
-      "email": "gabe.isman@gmail.com"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/techchange/eslint-config/issues"
   },
   "homepage": "https://github.com/techchange/eslint-config#readme",
   "peerDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "~7.0.1",
-    "eslint-plugin-react-hooks": "^2.1.2"
+    "eslint": "^8.19.0"
   }
 }

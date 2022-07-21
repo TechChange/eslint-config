@@ -58,7 +58,7 @@ module.exports = {
 		// Ignore internationalization lines due to long constant names
 		"max-len": [1, 100, 2, {
 			"ignoreUrls": true,
-			"ignorePattern": ".*({\\.\\.\\.messages\\.).*|.*(intl\\.formatMessage\\(messages\\.).*"
+			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*"
 		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
@@ -125,7 +125,11 @@ module.exports = {
 		// Require space before blocks (e.g. if (a) {})
 		"space-before-blocks": 2,
 		// Disallow space before opening paren in function definitions
-		"space-before-function-paren": [2, "never"],
+		"space-before-function-paren": ["error", {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
 		// Disallow spaces in parens
 		"space-in-parens": 2,
 		// Require space around infix operators (e.g. var foo = 1 + 2, not var foo = 1+2)
