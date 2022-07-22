@@ -1,6 +1,6 @@
 module.exports = {
 	"parserOptions": {
-		"ecmaVersion": 9,
+		"ecmaVersion": 13,
 		"ecmaFeatures": {
 			"impliedStrict": true,
 			"jsx": true
@@ -13,7 +13,7 @@ module.exports = {
 		"es6": true
 	},
 	"settings": {
-		"ecmascript": 9,
+		"ecmascript": 13,
 		"jsx": true,
 		"react": {
 			"pragma": "React",

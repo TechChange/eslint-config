@@ -13,8 +13,8 @@
   },
   "keywords": [
     "eslint",
-    "es2015",
-    "es6",
+    "es2022",
+    "es13", 
     "eslintconfig",
     "javascript",
     "react"
