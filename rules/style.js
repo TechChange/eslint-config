@@ -56,9 +56,10 @@ module.exports = {
 		// Enforce a maximum line length of 100 characters, while treating tabs as 2 characters
 		// Ignore URLs that are longer than 100 characters
 		// Ignore internationalization lines due to long constant names
+		// Ignore API docstrings
 		"max-len": [1, 100, 2, {
 			"ignoreUrls": true,
-			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*"
+			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*|( * @api).*"
 		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
