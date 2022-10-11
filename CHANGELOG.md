@@ -1,0 +1,49 @@
+# Changelog
+
+- **4.1.1**
+	- UPDATED: Add new exception to the `max-len` rule to ignore apiDoc documentation.
+- **4.0.1**
+	- UPDATED: Update to `ecmaVersion:13`, i.e. ECMAScript 2022, to support the latest javascript standard. 
+- **4.0.0**
+	- BREAKING: Upgrade `eslint` to v8.
+	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries for react configs.
+	- UPDATED: Upgrade to latest version of the 3rd-party react eslint libraries.
+- **3.0.1**
+	- UPDATED: Update `max-len` rule to account for line breaks in international regex exceptions.
+- **3.0.0**
+	- BREAKING: Added `react/jsx-indent` rule to enforce tabbing logical expressions inside a JSX statement.
+	- UPDATED: Update `max-len` rule to:
+		- Ignore URLs since these shouldn't have newlines inside them
+		- Ignore internationalization due to long contant names
+	- UPDATED: Increase `complexity` allowed to the eslint default of `20` as existing rule was unnecessarily constraining
+	- UPDATED: Remove react rule to start functions with handle
+	- UPDATED: Update rule `id-length` to allow variables `j` and `k` which are commonly used in `for` loops
+- **2.0.0**
+	- BREAKING: Added jsx-a11y plugin as peer dependency.
+	- ADDED: Added recommended rules from jsx-a11y plugin.
+- **1.0.0**
+	- BREAKING: Added rules for React hooks
+- **0.2.0**
+	- UPDATED: Use latest version of `eslint-plugin-react`
+	- ADDED: Additional react rules
+- **0.1.2**
+	- REMOVED: Babel eslint
+	- REMOVED: Extraneous settings
+- **0.1.1**
+	- UPDATED: Allow `dangerouslySetInnerHTML`
+- **0.1.0**
+	- UPDATED: Upgrade `eslint` to v2
+	- UPDATED: Upgrade `babel-eslint` to v5
+	- UPDATED: Upgrade `babel-loader` to v1.3
+- **0.0.4**
+	- UPDATED: Warn on `max-len`
+	- UPDATED: Increase allowed function complexity
+	- UPDATED: Warn on `global-require`
+	- UPDATED: Turn off `arrow-body-style`
+	- UPDATED: Turn off `react/no-multi-comp`
+- **0.0.3**
+	- UPDATED: Turn off `react/jsx-no-bind` errors
+- **0.0.2**
+	- ADDED: React rules
+- **0.0.1**
+	- Initial commit
