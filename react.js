@@ -21,6 +21,7 @@ module.exports = {
 		}
 	},
 	"plugins": [
+		"import",
 		"react",
 		"react-hooks",
 		"jsx-a11y",
@@ -31,6 +32,7 @@ module.exports = {
 		"./rules/variables",
 		"./rules/node",
 		"./rules/es6",
+		"./rules/imports",
 		"./rules/strict",
 		"./rules/style",
 		"./rules/react",
