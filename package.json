@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-techchange",
-  "version": "4.1.0-pre-becky.1",
+  "version": "5.0.0",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
   "engines": {

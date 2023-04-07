@@ -12,13 +12,13 @@ module.exports = {
 		"import"
 	],
 	"extends": [
-		"./rules/possible-errors",
 		"./rules/best-practices",
-		"./rules/variables",
-		"./rules/node",
 		"./rules/es6",
 		"./rules/imports",
+		"./rules/node",
+		"./rules/possible-errors",
 		"./rules/strict",
-		"./rules/style"
+		"./rules/style",
+		"./rules/variables"
 	]
 };

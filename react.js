@@ -22,20 +22,20 @@ module.exports = {
 	},
 	"plugins": [
 		"import",
+		"jsx-a11y",
 		"react",
 		"react-hooks",
-		"jsx-a11y",
 	],
 	"extends": [
-		"./rules/possible-errors",
 		"./rules/best-practices",
-		"./rules/variables",
-		"./rules/node",
 		"./rules/es6",
 		"./rules/imports",
+		"./rules/node",
+		"./rules/possible-errors",
+		"./rules/react",
 		"./rules/strict",
 		"./rules/style",
-		"./rules/react",
+		"./rules/variables",
 		"plugin:jsx-a11y/recommended"
 	]
 };
