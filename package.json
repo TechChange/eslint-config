@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-techchange",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "TechChange's default ESLint configurations for ES2015 and React.",
   "main": "index.js",
   "engines": {
@@ -14,7 +14,7 @@
   "keywords": [
     "eslint",
     "es2022",
-    "es13", 
+    "es13",
     "eslintconfig",
     "javascript",
     "react"
@@ -31,5 +31,8 @@
   "homepage": "https://github.com/techchange/eslint-config#readme",
   "peerDependencies": {
     "eslint": "^8.19.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.27.5"
   }
 }

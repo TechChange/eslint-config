@@ -1,5 +1,8 @@
 # Changelog
 
+- **4.2.0**
+	- UPDATED: Added new dependency `eslint-plugin-import`.
+	- UPDATED: Added new rules to manage consistent ordering of import statements for both default and react eslint configurations.
 - **4.1.1**
 	- UPDATED: Add new exception to the `max-len` rule to ignore apiDoc documentation.
 - **4.0.1**
