@@ -1,5 +1,7 @@
 # Changelog
 
+- **4.2.1**
+	- UPDATED: Ignore `@property` JSDocs tag for `max-len` rule.
 - **4.2.0**
 	- UPDATED: Added new dependency `eslint-plugin-import`.
 	- UPDATED: Added new rules to manage consistent ordering of import statements for both default and react eslint configurations.

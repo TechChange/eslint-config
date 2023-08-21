@@ -59,7 +59,7 @@ module.exports = {
 		// Ignore API docstrings
 		"max-len": [1, 100, 2, {
 			"ignoreUrls": true,
-			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*|(\\s\\*\\s@api).*"
+			"ignorePattern": ".*(\\{\\.\\.\\.messages\\..*\\}).*|.*(intl\\.formatMessage\\(messages\\.).*|(\\s\\*\\s@api|@property).*"
 		}],
 		// Enforce a maximum of 10 levels of nested callbacks
 		"max-nested-callbacks": 2,
