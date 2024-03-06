@@ -1,7 +1,7 @@
 # Changelog
 
 - **4.3.0**
-	- UPDATED: Add additional styling rules to improve consistency and auto-formatting.
+	- ADDED: Add additional styling rules to improve consistency and auto-formatting.
 - **4.2.1**
 	- UPDATED: Ignore `@property` JSDocs tag for `max-len` rule.
 - **4.2.0**
