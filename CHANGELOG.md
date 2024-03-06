@@ -1,5 +1,7 @@
 # Changelog
 
+- **4.3.0**
+	- ADDED: Add additional styling rules to improve consistency and auto-formatting.
 - **4.2.1**
 	- UPDATED: Ignore `@property` JSDocs tag for `max-len` rule.
 - **4.2.0**
@@ -8,7 +10,7 @@
 - **4.1.1**
 	- UPDATED: Add new exception to the `max-len` rule to ignore apiDoc documentation.
 - **4.0.1**
-	- UPDATED: Update to `ecmaVersion:13`, i.e. ECMAScript 2022, to support the latest javascript standard. 
+	- UPDATED: Update to `ecmaVersion:13`, i.e. ECMAScript 2022, to support the latest javascript standard.
 - **4.0.0**
 	- BREAKING: Upgrade `eslint` to v8.
 	- BREAKING: Switch from the DEPRECATED `babel-eslint` library to the `@babel/eslint-parser` and `@babel/core` libraries for react configs.

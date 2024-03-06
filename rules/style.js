@@ -1,14 +1,20 @@
 module.exports = {
 	"rules": {
-		// Enforce no spaces at bookends of array/object definitions (e.g. [2, 3] is valid, [ 2, 3 ] is invalid)
+		// Enforce adding line breaks consistently. Reports an error if one
+		// bracket in the pair has a linebreak and the other does not.
+		"array-bracket-newline": [2, "consistent"],
+		// Enforce no spaces at bookends of array/object definitions
+		// (e.g. [2, 3] is valid, [ 2, 3 ] is invalid)
 		"array-bracket-spacing": [2, "never"],
-		// Enforce spaces in single line blocks (e.g. function() { return true; } is valid, function() {return true;} is invalid)
+		// Enforce spaces in single line blocks
+		// (e.g. function() { return true; } is valid, function() {return true;} is invalid)
 		"block-spacing": 2,
 		// Enforce consistent brace style
 		"brace-style": [2, "1tbs", {
 			"allowSingleLine": true
 		}],
-		// Enforce camelcase in all variable and function declarations (does not include leading or trailing _ or CAMEL_CASE)
+		// Enforce camelcase in all variable and function declarations
+		// (does not include leading or trailing _ or CAMEL_CASE)
 		"camelcase": [2, { "properties": "never" }],
 		// Enforce spaces after commas
 		"comma-spacing": [2, {
@@ -19,11 +25,13 @@ module.exports = {
 		"comma-style": [2, "last"],
 		// Disallow spaces inside of computed properties
 		"computed-property-spacing": [2, "never"],
-		// Enforce capturing the current execution context using the that variable (e.g var that = this;) - consider changing to self
+		// Enforce capturing the current execution context using the that
+		// variable (e.g var that = this;) - consider changing to self
 		"consistent-this": [2, "that"],
 		// Enforce trailing space at the end of every non-empty file
 		"eol-last": 2,
-		// Enforce naming of optionally named functions (that could remain anonymous). This helps with debugging, but open to turning this off
+		// Enforce naming of optionally named functions (that could remain
+		// anonymous). This helps with debugging, but open to turning this off
 		"func-names": 2,
 		// Enforce a minimum id length of 2 characters, except i for iterating over loops
 		"id-length": [2, {
@@ -31,7 +39,8 @@ module.exports = {
 		}],
 		// Enforce tabs equivalent to two spaces
 		"indent": [2, "tab"],
-		// Enforce double quotes for JSX attribute values unless a set of single quotes contains a double quote
+		// Enforce double quotes for JSX attribute values unless a set of
+		// single quotes contains a double quote
 		"jsx-quotes": [2, "prefer-double"],
 		// Enforce one space after key in object
 		"key-spacing": [2, {
@@ -45,7 +54,8 @@ module.exports = {
 		}],
 		// Enforce unix-style line endings
 		"linebreak-style": [2, "unix"],
-		// Enforce spaces before comment blocks and allow comments at the beginning of array and object declarations
+		// Enforce spaces before comment blocks and allow comments at the
+		// beginning of array and object declarations
 		"lines-around-comment": [2, {
 			"beforeBlockComment": true,
 			"allowObjectStart": true,
@@ -77,8 +87,12 @@ module.exports = {
 		"no-bitwise": 2,
 		// Disallow the use of continue statements
 		"no-continue": 2,
-		// Disallow a singular if statement inside of an else block in favor of using an else if statement
+		// Disallow a singular if statement inside of an else block in favor
+		// of using an else if statement
 		"no-lonely-if": 2,
+		// Enforce adding parentheses around statements with mixed operators
+		// to improve clarity
+		"no-mixed-operators": 2,
 		// Disallow mixing of tabs and spaces, except for the purpose of alignment
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 		// Disallow more than three blank lines in a row, and only allow 1 at the end of a file
@@ -91,9 +105,11 @@ module.exports = {
 		"no-negated-condition": 2,
 		// Disallow nested ternary expressions
 		"no-nested-ternary": 2,
-		// Disallow using the new Object constructor in favor of the object literal syntax var myObject = {};
+		// Disallow using the new Object constructor in favor of the
+		// object literal syntax var myObject = {};
 		"no-new-object": 2,
-		// Disallow the use of unary operators, ++ and -- unless they are used as iterators for a for loop
+		// Disallow the use of unary operators, ++ and -- unless they are used as
+		// iterators for a for loop
 		"no-plusplus": [2, {
 			"allowForLoopAfterthoughts": true
 		}],
@@ -107,9 +123,16 @@ module.exports = {
 		}],
 		// Require extra spaces inside objects
 		"object-curly-spacing": [2, "always"],
-		// Require quoting of object keys when necessary (e.g. var object = { "foo-bar": 5, bar: 2, foo: function() {}})
+		// Enforce operators at the end of a line except for ternary operators,
+		// which should be at the beginning of a line
+		"operator-linebreak": [2, "after",
+			{ "overrides": {"?": "before", ":": "before"}}
+		],
+		// Require quoting of object keys when necessary
+		// (e.g. var object = { "foo-bar": 5, bar: 2, foo: function() {}})
 		"quote-props": [2, "as-needed"],
-		// Require use of double quotes for string literals, unless they would require escaping (e.g. var string = 'The woman said "Hi!"';)
+		// Require use of double quotes for string literals, unless they would
+		// require escaping (e.g. var string = 'The woman said "Hi!"';)
 		"quotes": [2, "single", "avoid-escape"],
 		// Require JSDoc comments for all functions
 		"require-jsdoc": [2, {
@@ -135,10 +158,13 @@ module.exports = {
 		"space-in-parens": 2,
 		// Require space around infix operators (e.g. var foo = 1 + 2, not var foo = 1+2)
 		"space-infix-ops": 2,
-		// Require spaces around unary words like void, new, delete, disallow around nonwords like ++, --, !
+		// Require spaces around unary words like void, new, delete,
+		// disallow around nonwords like ++, --, !
 		"space-unary-ops": 2,
 		// Require spaces in comments (e.g. // This is a comment, not //This is a comment)
 		"spaced-comment": [2, "always"],
+		// Never allow spaces within the curly braces of template strings
+		"template-curly-spacing": [2, "never"],
 		// Wrap regex in parens to make it clearer
 		"wrap-regex": 2
 	}
